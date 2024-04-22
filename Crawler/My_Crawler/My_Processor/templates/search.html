@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8b195; /* Vibrant background color */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #e27d60; /* Vibrant button color */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #db5a42; /* Hover effect color */
+        }
+        #results {
+            margin-top: 20px;
+        }
+        #results li {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Product Search</h1>
+        <form id="searchForm" onsubmit="searchProducts(event)">
+            <input type="text" id="query" placeholder="Enter your search query">
+            <input type="submit" value="Search">
+        </form>
+        <ul id="results"></ul>
+    </div>
+
+    <script>
+        function searchProducts(event) {
+            event.preventDefault(); // Prevent form submission
+
+            var query = document.getElementById('query').value;
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/search', true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    var results = JSON.parse(xhr.responseText);
+                    displayResults(results);
+                } else {
+                    alert('Error: ' + xhr.statusText);
+                }
+            };
+            xhr.onerror = function() {
+                alert('Request failed');
+            };
+            xhr.send(JSON.stringify({query: query}));
+        }
+
+        function displayResults(results) {
+            var resultList = document.getElementById('results');
+            resultList.innerHTML = '';
+            if (results.length === 0) {
+                // If no results found, display a message
+                var li = document.createElement('li');
+                li.textContent = 'No matching products found.';
+                resultList.appendChild(li);
+            } else {
+                // Display each result
+                results.forEach(function(result) {
+                    var li = document.createElement('li');
+                    li.innerHTML = '<strong>' + result.title + '</strong><br>' + 
+                                   '<em>Plot:</em> ' + (result.plot ? result.plot : 'N/A') + '<br>' + 
+                                   'Cosine Similarity Score: ' + result.cosine_similarity_score;
+                    resultList.appendChild(li);
+                });
+            }
+        }
+    </script>
+</body>
+</html>
