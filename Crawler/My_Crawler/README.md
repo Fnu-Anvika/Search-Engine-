@@ -240,28 +240,11 @@ Run the respective scripts or Flask application to execute the functionalities.
 
 ## Data Sources 
 
-## *Links, Downloads, Access Information:*
-- https://youtu.be/m_3gjHGxIJc?si=F4v2tKm7kzhbyBXN
-   
-   This was the you-tube channel which I refered to so as to get the insights of web crawler using scrapy. Later then implemented on the other websites.
+Web Content:
+The web crawling component of the project retrieves data from "SubsLikeScript," a website accessible at `https://subslikescript.com/movies.` This website serves as a platform for accessing subtitles and scripts for a wide range of movies. It offers a diverse collection of web pages containing movie titles, along with their respective subtitles and scripts. This data is utilized for indexing and search functionality within the project.
 
-- https://subslikescript.com/movies
-   
-   The website which I have used in.
-
-- https://www.udemy.com/course/web-scraping-course-in-python-bs4-selenium-and-scrapy/?couponCode=LETSLEARNNOWPP
-
-   I have also taken into consideration of the Udemy course for the web crawling thing so as to know how the real world implementation is done.
-
-- And for the second part, for calculating the inverted index and cosine similarity I have used the AI tools like, Chat-gpt, and Perplexity.
-
-- And for the third part, that is flask. I stated to learn from a popular website, that is
-
- https://www.geeksforgeeks.org/flask-tutorial/
-
-- The You-Tube channel which i referred was of, 
-
- https://youtu.be/Z1RJmh_OqeA?si=fOcslbdAm7gx-eqI
+Flask:
+The Flask Web Application, accessible at http://127.0.0.1:5000, serves as the data source for the Flask-powered query processing module. This application allows users to enter unstructured text queries. The system then retrieves relevant information from the indexed online pages based on these queries.
 
 ## Test Cases 
 
@@ -347,27 +330,35 @@ This Python script utilizes Flask to build a web application for retrieving docu
 
 - **Running the Flask Application**: Finally, the script launches the Flask application in debugging mode.
 
-# Bibiolgraphy
+# Bibilography
 
 [1] Scikit-Learn Documentation. https://scikit-learn.org/stable/
 
 [2] Building a Search Engine pt 1: The Crawler and Indexer. https://johnpatrickbender.com/projects/building_a_search_engine_pt_1.html
 
-[3]  Web Crawler (Scrapy-based): https://github.com/scrapy/scrapy
+#### 1.  I have referred the following youtube video for crawling using scrapy and did by taking the "goodreads.quotes" website  :
 
-[4] Indexer (Scikit-Learn based): https://github.com/scikit-learn/scikit-learn
+ - NeuralNine. "Crawling using Scrapy," YouTube video, NeuralNine, https://youtu.be/m_3gjHGxIJc?si=F4v2tKm7kzhbyBXN.
 
-[5] Query Processor (Flask-based): https://github.com/pallets/flask
+ - The website which I have used in.
 
-[6] Scrapy Documentation: https://docs.scrapy.org/en/latest/
+- Udemy, "Web scraping in python selenium, scrapy + chatgpt prize 2024", " "https://www.udemy.com/course/web-scraping-course-in-python-bs4-selenium-and-scrapy/?couponCode=LETSLEARNNOWPP
+- 
+-  I have also taken into consideration of the Udemy course for the web crawling thing so as to know how the real world implementation is done.
 
-[7] Scikit-Learn Documentation: https://scikit-learn.org/stable/
+#### 2. - And for the second part, for calculating the inverted index and cosine similarity I have used the AI tools like, Chat-gpt, and Perplexity.
 
-[8] Flask Documentation: https://flask.palletsprojects.com/en/2.2.x/
+ -  "ChatGPT," OpenAI, "https://chat.openai.com/c/0693a1dd-8f18-4541-b78e-a6cdbf408e3e".
 
-[9] Scrapy: https://github.com/scrapy/scrapy
+ -  "Perplexity," OpenAI, "https://www.perplexity.ai/search/For-a-fixed-rBNiypq4TpaNJbjK0Lyjcg".
 
-[10] Scikit-Learn: https://github.com/scikit-learn/scikit-learn
+#### 3. And for the third part, that is flask. I stated to learn from a popular website, that is
 
-[11] Flask: https://github.com/pallets/flask
+ geeksforgeeks, "https://www.geeksforgeeks.org/flask-tutorial/"
+
+
+- The You-Tube channel which i referred was of, 
+
+ https://youtu.be/Z1RJmh_OqeA?si=fOcslbdAm7gx-eqI
+
 
