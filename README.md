@@ -240,28 +240,11 @@ Run the respective scripts or Flask application to execute the functionalities.
 
 ## Data Sources 
 
-## *Links, Downloads, Access Information:*
-- https://youtu.be/m_3gjHGxIJc?si=F4v2tKm7kzhbyBXN
-   
-   This was the you-tube channel which I refered to so as to get the insights of web crawler using scrapy. Later then implemented on the other websites.
+Web Content:
+The web crawling component of the project retrieves data from "SubsLikeScript," a website accessible at `https://subslikescript.com/movies.` This website serves as a platform for accessing subtitles and scripts for a wide range of movies. It offers a diverse collection of web pages containing movie titles, along with their respective subtitles and scripts. This data is utilized for indexing and search functionality within the project.
 
-- https://subslikescript.com/movies
-   
-   The website which I have used in.
-
-- https://www.udemy.com/course/web-scraping-course-in-python-bs4-selenium-and-scrapy/?couponCode=LETSLEARNNOWPP
-
-   I have also taken into consideration of the Udemy course for the web crawling thing so as to know how the real world implementation is done.
-
-- And for the second part, for calculating the inverted index and cosine similarity I have used the AI tools like, Chat-gpt, and Perplexity.
-
-- And for the third part, that is flask. I stated to learn from a popular website, that is
-
- https://www.geeksforgeeks.org/flask-tutorial/
-
-- The You-Tube channel which i referred was of, 
-
- https://youtu.be/Z1RJmh_OqeA?si=fOcslbdAm7gx-eqI
+Flask:
+The Flask Web Application, accessible at http://127.0.0.1:5000, serves as the data source for the Flask-powered query processing module. This application allows users to enter unstructured text queries. The system then retrieves relevant information from the indexed online pages based on these queries.
 
 ## Test Cases 
 
@@ -295,7 +278,7 @@ This code acts as a web crawling Scrapy spider. What it does is broken down as f
 
 - The number of pages crawled is tracked using the `count` property.
 
-- A tuple of one or more `Rule` objects makes up the `rules` attribute. Every `Rule` specifies an action that the spider must do. In this instance, the rule instructs the spider to call the `parse_item} method for each link and retrieve links from items that meet the XPath phrase.
+- A tuple of one or more `Rule` objects makes up the `rules` attribute. Every `Rule` specifies an action that the spider must do. In this instance, the rule instructs the spider to call the `parse_item` method for each link and retrieve links from items that meet the XPath phrase.
 
 - For every link that the rules extract, the `parse_item` function is invoked. It raises a `CloseSpider` exception to halt the spider after first determining whether the maximum depth or number of pages has been achieved. The current page's HTML content is then appended to a file called "all_pages.html." Ultimately, it uses XPath expressions to extract the data from the page and outputs it as a dictionary.
 
@@ -309,7 +292,7 @@ In this Python script, you can run **cosine similarity** based search queries on
 
 - **The Indexer Class** : `Indexer` is a class developed with methods to compute cosine similarity for a given query, save and load the index to/from a pickle file, and create an inverted index from a group of documents.
 
-  - `__init__`: This is the `Indexer` class's constructor function. The `filename` is initialized, the documents are retrieved from the file, a term-document matrix is created using `CountVectorizer`, a tf-idf matrix is transformed using `TfidfTransformer}, and an inverted index is constructed.
+  - `__init__`: This is the `Indexer` class's constructor function. The `filename` is initialized, the documents are retrieved from the file, a term-document matrix is created using `CountVectorizer`, a tf-idf matrix is transformed using `TfidfTransformer`, and an inverted index is constructed.
 
   - `retrieve_documents`: This process extracts the text from the `<body>` tags after reading the HTML content from the file and parsing it using `BeautifulSoup`. The text is subsequently added to the `documents` list.
 
@@ -347,27 +330,30 @@ This Python script utilizes Flask to build a web application for retrieving docu
 
 - **Running the Flask Application**: Finally, the script launches the Flask application in debugging mode.
 
-# Bibiolgraphy
+# Bibilography
 
-[1] Scikit-Learn Documentation. https://scikit-learn.org/stable/
+#### 1. Scikit-Learn Documentation. "https://scikit-learn.org/stable/"
 
-[2] Building a Search Engine pt 1: The Crawler and Indexer. https://johnpatrickbender.com/projects/building_a_search_engine_pt_1.html
+#### 2. Building a Search Engine pt 1: The Crawler and Indexer. "https://johnpatrickbender.com/projects/building_a_search_engine_pt_1.html"
 
-[3]  Web Crawler (Scrapy-based): https://github.com/scrapy/scrapy
+#### 3.  I have referred the following youtube video for crawling using scrapy and did by taking the "goodreads.quotes" website  :
 
-[4] Indexer (Scikit-Learn based): https://github.com/scikit-learn/scikit-learn
+ - NeuralNine. "Crawling using Scrapy," YouTube video, NeuralNine, "https://youtu.be/m_3gjHGxIJc?si=F4v2tKm7kzhbyBXN."
+   
+ - Udemy, "Web scraping in python Selenium, Scrapy + ChatGPT prize 2024", " "https://www.udemy.com/course/web-scraping-course-in-python- bs4-selenium-and-scrapy/?couponCode=LETSLEARNNOWPP
+ 
+ - Website:"subslikescript", link: "https://subslikescript.com/movies"
 
-[5] Query Processor (Flask-based): https://github.com/pallets/flask
+#### 4. - And for the second part, for calculating the inverted index and cosine similarity I have used the AI tools like, Chat-gpt, and Perplexity.
 
-[6] Scrapy Documentation: https://docs.scrapy.org/en/latest/
+ -  "ChatGPT", OpenAI, "https://chat.openai.com/c/0693a1dd-8f18-4541-b78e-a6cdbf408e3e".
 
-[7] Scikit-Learn Documentation: https://scikit-learn.org/stable/
+ -  "Perplexity", OpenAI, "https://www.perplexity.ai/search/For-a-fixed-rBNiypq4TpaNJbjK0Lyjcg".
 
-[8] Flask Documentation: https://flask.palletsprojects.com/en/2.2.x/
+#### 5. And for the third part, that is flask. I  learnt from a popular website, that is
 
-[9] Scrapy: https://github.com/scrapy/scrapy
+ -  "geeksforgeeks", "https://www.geeksforgeeks.org/flask-tutorial/"
 
-[10] Scikit-Learn: https://github.com/scikit-learn/scikit-learn
+ - FreeCodeCamp.org. "Learn Flask for Python", YouTube video, "https://youtu.be/Z1RJmh_OqeA?si=fOcslbdAm7gx-eqI"
 
-[11] Flask: https://github.com/pallets/flask
 
