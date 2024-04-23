@@ -332,33 +332,28 @@ This Python script utilizes Flask to build a web application for retrieving docu
 
 # Bibilography
 
-[1] Scikit-Learn Documentation. https://scikit-learn.org/stable/
+#### 1. Scikit-Learn Documentation. https://scikit-learn.org/stable/
 
-[2] Building a Search Engine pt 1: The Crawler and Indexer. https://johnpatrickbender.com/projects/building_a_search_engine_pt_1.html
+#### 2. Building a Search Engine pt 1: The Crawler and Indexer. "https://johnpatrickbender.com/projects/building_a_search_engine_pt_1.html"
 
-#### 1.  I have referred the following youtube video for crawling using scrapy and did by taking the "goodreads.quotes" website  :
+#### 3.  I have referred the following youtube video for crawling using scrapy and did by taking the "goodreads.quotes" website  :
 
- - NeuralNine. "Crawling using Scrapy," YouTube video, NeuralNine, https://youtu.be/m_3gjHGxIJc?si=F4v2tKm7kzhbyBXN.
+ - NeuralNine. "Crawling using Scrapy," YouTube video, NeuralNine, "https://youtu.be/m_3gjHGxIJc?si=F4v2tKm7kzhbyBXN."
+   
+ - Udemy, "Web scraping in python Selenium, Scrapy + ChatGPT prize 2024", " "https://www.udemy.com/course/web-scraping-course-in-python- bs4-selenium-and-scrapy/?couponCode=LETSLEARNNOWPP
+ 
+ - Website:"subslikescript", link: "https://subslikescript.com/movies"
 
- - The website which I have used in.
+#### 4. - And for the second part, for calculating the inverted index and cosine similarity I have used the AI tools like, Chat-gpt, and Perplexity.
 
-- Udemy, "Web scraping in python selenium, scrapy + chatgpt prize 2024", " "https://www.udemy.com/course/web-scraping-course-in-python-bs4-selenium-and-scrapy/?couponCode=LETSLEARNNOWPP
-- 
--  I have also taken into consideration of the Udemy course for the web crawling thing so as to know how the real world implementation is done.
+ -  "ChatGPT", OpenAI, "https://chat.openai.com/c/0693a1dd-8f18-4541-b78e-a6cdbf408e3e".
 
-#### 2. - And for the second part, for calculating the inverted index and cosine similarity I have used the AI tools like, Chat-gpt, and Perplexity.
+ -  "Perplexity", OpenAI, "https://www.perplexity.ai/search/For-a-fixed-rBNiypq4TpaNJbjK0Lyjcg".
 
- -  "ChatGPT," OpenAI, "https://chat.openai.com/c/0693a1dd-8f18-4541-b78e-a6cdbf408e3e".
+#### 5. And for the third part, that is flask. I  learnt from a popular website, that is
 
- -  "Perplexity," OpenAI, "https://www.perplexity.ai/search/For-a-fixed-rBNiypq4TpaNJbjK0Lyjcg".
+ -  "geeksforgeeks", "https://www.geeksforgeeks.org/flask-tutorial/"
 
-#### 3. And for the third part, that is flask. I stated to learn from a popular website, that is
-
- geeksforgeeks, "https://www.geeksforgeeks.org/flask-tutorial/"
-
-
-- The You-Tube channel which i referred was of, 
-
- https://youtu.be/Z1RJmh_OqeA?si=fOcslbdAm7gx-eqI
+ - FreeCodeCamp.org. "Learn Flask for Python", YouTube video, "https://youtu.be/Z1RJmh_OqeA?si=fOcslbdAm7gx-eqI"
 
 
