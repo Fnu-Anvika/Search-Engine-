@@ -63,7 +63,8 @@ class Indexer:
         return result
 
 # Example usage
-filename = "C:\\Users\\91855\\OneDrive\\Desktop\\Final_IR\\Crawler\\My_Crawler\\all_pages.html"
+#filename = "C:\\Users\\91855\\OneDrive\\Desktop\\Final_IR\\Crawler\\My_Crawler\\all_pages.html"
+filename = "../all_pages.html"
 
 indexer = Indexer(filename)
 indexer.save_index_to_pickle()

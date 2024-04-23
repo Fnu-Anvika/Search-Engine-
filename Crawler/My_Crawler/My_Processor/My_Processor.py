@@ -46,7 +46,7 @@ def load_documents_from_json(json_file):
     return documents
 
 # Path to your output.json file
-json_file = 'C:\\Users\\91855\\OneDrive\\Desktop\\Final_IR\\Crawler\\My_Crawler\\output.json'
+json_file = '../output.json'
 
 # Load documents from JSON file
 documents = load_documents_from_json(json_file)
