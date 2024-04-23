@@ -332,7 +332,7 @@ This Python script utilizes Flask to build a web application for retrieving docu
 
 # Bibilography
 
-#### 1. Scikit-Learn Documentation. https://scikit-learn.org/stable/
+#### 1. Scikit-Learn Documentation. "https://scikit-learn.org/stable/"
 
 #### 2. Building a Search Engine pt 1: The Crawler and Indexer. "https://johnpatrickbender.com/projects/building_a_search_engine_pt_1.html"
 
@@ -340,7 +340,7 @@ This Python script utilizes Flask to build a web application for retrieving docu
 
  - NeuralNine. "Crawling using Scrapy," YouTube video, NeuralNine, "https://youtu.be/m_3gjHGxIJc?si=F4v2tKm7kzhbyBXN."
    
- - Udemy, "Web scraping in python Selenium, Scrapy + ChatGPT prize 2024", " "https://www.udemy.com/course/web-scraping-course-in-python- bs4-selenium-and-scrapy/?couponCode=LETSLEARNNOWPP
+ - Udemy: "Web scraping in python Selenium, Scrapy + ChatGPT prize 2024", "https://www.udemy.com/course/web-scraping-course-in-python-bs4-selenium-and-scrapy/?couponCode=LETSLEARNNOWPP"
  
  - Website:"subslikescript", link: "https://subslikescript.com/movies"
 
